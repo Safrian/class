@@ -1,0 +1,21 @@
+h1 {
+  color: red;
+  font-size: 28px;
+}
+
+img {
+  width: 360px;
+  display: block;
+  margin-bottom: 28px;
+  padding: 32px;
+  background: rgba(96, 179, 194, 0.2);
+}
+
+.img1 {
+  width: 220px;
+  background: blanchedalmond;
+}
+
+.img2 {
+  width: 800px;
+}

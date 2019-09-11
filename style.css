@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: manjari, sans-serif;
+  background: linear-gradient(to right, #53e0f9, #2bd4d4);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  height: 450px;
+  box-shadow: 2px 4px 12px 8px rgba(49, 53, 59, 0.12);
+  background: white;
+}
+
+.left {
+  width: 50%;
+  background: url(kopi.jpg);
+  background-position: rigth;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 32px 48px;
+}
+
+.right {
+  width: 50%;
+  padding: 32px 48px;
+  overflow: auto;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(to bottom, tranparent, rgba(0, 0, 0, 0.7));
+}
+.job-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.job-title > span {
+  color: #08c4dd;
+  font-weight: 700;
+}
+
+.name,
+.desc,
+.contact-button {
+  color: white;
+}
+
+.contact-button {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-top: 16px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.contact-button:hover {
+  background: white;
+  color: #2bd4d4;
+}
+
+.experience {
+  margin-bottom: 28px;
+}
+
+.experience:last-child {
+  margin-bottom: 0;
+}
+.experience-workplace {
+  font-weight: 700;
+}
+
+.experience-workplace > span:first-child {
+  font-weight: 700;
+}
+
+.experience-workplace > span:nth-child(2) {
+  font-size: 14px;
+}
+
+.experience-workplace > span:last-child {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: red;
+}
+
+.experience-url {
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(20, 148, 207);
+}
+
+.experience-location {
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.experience-desc {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.profile-image {
+  display: none;
+}
+@media only screen and (max-width: 799px) {
+  body {
+    height: auto;
+    padding: 32px 16px;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left,
+  .left-container {
+    background: none;
+  }
+  .left {
+    background: url(https://www.pixelstalk.net/wp-content/uploads/2016/04/Simple-backgrounds-for-desktop-download-620x388.jpg)
+      center / cover no-repeat;
+  }
+  .profile-image {
+    display: block;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    margin-bottom: 8px;
+  }
+}
